@@ -1,0 +1,443 @@
+:root {
+    --blue: #00eaff;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+    
+}
+
+*::selection {
+    background: var(--blue);
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.267);
+    color: #fff;
+}
+
+.heading span {
+    color: var(--blue);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    max-height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-flow: column;
+    text-align: center;
+    overflow: auto;
+}
+
+header .user img {
+    margin-top:1.5rem;
+    max-height:65%;
+    max-width: 65%; /* Ensure the image doesn't exceed the width of its container */
+    border-radius: 50%;
+    border: 0.4rem solid var(--blue);
+    margin-bottom: 1rem;
+}
+
+header .user .name {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+    margin-bottom:10px;
+}
+
+header .navbar {
+    width: 100%;
+   /* overflow:auto; */
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+header .navbar ul li a {
+    display: block;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;    
+    margin: 2rem 0;
+}
+
+header .navbar ul li a:hover {
+    background: var(--blue);
+    color: #000;
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #00eaff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--blue);
+}
+
+.home p , .experience p {
+    font-size:2.2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.internship-details {
+  margin-left: 6rem;
+  margin-top:15px;
+}
+
+
+.experience-points {
+    list-style-type: square; /* Use bullet points for each experience point */
+    color: white;
+    font-size:2rem;
+    margin-top:15px;
+    margin-left: 7.5rem;
+  }
+  
+  .Activity-points {
+    list-style-type: square; /* Use bullet points for each experience point */
+    color: white;
+    font-size:2rem;
+    margin-top:15px;
+    margin-left: 0rem;
+  }
+
+  .experience-points li {
+    margin-bottom: 5px; /* Add spacing between each experience point */
+  }
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info span {
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: #fff
+}
+
+.education .box-container {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box {
+    height:15rem;
+    width: 32rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .4rem solid #fff;
+    position: reltive;
+}
+
+.education .box-container .box span {
+    font-size: 1.3rem;
+    background: #999999;
+    color: #ffffff;
+    border-radius: 4rem;
+    padding: 1rem 1.2rem;
+}
+
+.education .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p {
+    font-size: 1.6rem;
+    color: #eee;
+    padding-top: 1rem 0;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+
+.project .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .counter .box {
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+ 
+.project .counter .box a{
+    text-decoration: underline;
+    text-decoration-thickness:1.2px;
+    text-underline-offset: 4px;
+}
+
+.project .counter .box:hover{
+    transform: scale(1.1);
+}
+
+.project .counter .box span {
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.project .counter .box h3 a{
+    font-size: 2rem;
+    color: #fff
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+ .contact .row form .message{
+    height: 15rem;
+    resize: none;
+ }
+
+ .contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+ }
+
+ .contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+ }
+
+ .contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--blue);
+
+ }
+
+.contact .row form button i{
+    padding-right: 1rem;
+    color: var(--blue);
+    padding-left: 1rem;
+
+}
+.contact .row form button{
+    border: .5rem solid var(--blue);
+}
+/* MEDIA QUERY */
+@media(max-width:1200px) {
+    html {
+        font: size 55%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+    }
+    .education .box-container .box {
+        width: 100%;
+    }
+}
+
+@media(max-width:991px) {
+    header {
+        left: -120%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header.toggle {
+        left: 0%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    
+    header .navbar ul li a {
+        padding: 1rem;    
+        margin: 2rem 0;
+    }    
+    
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width:450px) {
+    header {
+        width: 100vw;
+    }
+
+    .headling {
+        margin: 0 3rem;
+    }
+
+    .about .row .counter .box {
+        width: 100%;
+    }
+
+    .education .box-container .box {
+        width: 100%;
+    }
+    .contact .row form{
+        margin:3rem 0;
+    }
+}
